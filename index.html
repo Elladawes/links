@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#091c33">
+
+  <title>Ella Dawes | Professional Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(145deg, #071629, #153d67);
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 850px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 46px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      margin-bottom: 12px;
+    }
+
+    .subtitle {
+      font-size: 17px;
+      color: #c1d6eb;
+      line-height: 1.8;
+      margin-bottom: 48px;
+    }
+
+    .links {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.09);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      border-radius: 20px;
+      padding: 35px 22px;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: rgba(255, 255, 255, 0.15);
+    }
+
+    .card img {
+      width: 130px;
+      height: 130px;
+      object-fit: contain;
+      margin-bottom: 25px;
+    }
+
+    .card h2 {
+      font-size: 21px;
+      margin: 0 0 12px;
+    }
+
+    .card p {
+      color: #c1d6eb;
+      font-size: 14px;
+      line-height: 1.6;
+      min-height: 45px;
+      margin-bottom: 24px;
+    }
+
+    .button {
+      display: block;
+      padding: 14px 15px;
+      background: #ffffff;
+      color: #12375c;
+      border-radius: 9px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.2s;
+    }
+
+    .button:hover {
+      background: #dcecff;
+    }
+
+    footer {
+      margin-top: 50px;
+      color: #9fb8d1;
+      font-size: 12px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 35px;
+      }
+
+      .subtitle {
+        font-size: 14px;
+        margin-bottom: 30px;
+      }
+
+      .links {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .card {
+        padding: 25px 20px;
+      }
+
+      .card img {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 15px;
+      }
+
+      .card p {
+        min-height: 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="container">
+
+    <h1>Ella Dawes</h1>
+
+    <p class="subtitle">
+      B.S. Integrated Business &amp; Engineering | Purdue University
+      <br>
+      M.S. Engineering Management | UCLA
+    </p>
+
+    <div class="links">
+
+      <!-- LINKEDIN CARD -->
+      <div class="card">
+
+        <img src="linkedin.png" alt="LinkedIn Logo">
+
+        <h2>LinkedIn</h2>
+
+        <p>
+          Explore my professional background,
+          education, and experience.
+        </p>
+
+        <a class="button"
+           href="https://www.linkedin.com/in/ella-dawes/"
+           target="_blank"
+           rel="noopener noreferrer">
+          View LinkedIn Profile ↗
+        </a>
+
+      </div>
+
+      <!-- ENGINEERING PORTFOLIO CARD -->
+      <div class="card">
+
+        <img src="engineering.png" alt="Engineering Icon">
+
+        <h2>Engineering Portfolio</h2>
+
+        <p>
+          Explore my engineering projects,
+          technical experience, and work.
+        </p>
+
+        <a class="button"
+           href="https://2023mechatronicselladawes.weebly.com/"
+           target="_blank"
+           rel="noopener noreferrer">
+          View Engineering Portfolio ↗
+        </a>
+
+      </div>
+
+    </div>
+
+    <footer>
+      ENGINEERING • LEADERSHIP • INNOVATION
+    </footer>
+
+  </main>
+
+</body>
+</html>
